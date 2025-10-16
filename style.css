@@ -1,56 +1,83 @@
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-}
-
+/* Estilo geral do header */
 header {
-background-color: #333;
-color: white;
+background-color: #1e1e1e;
+color: #ffffff;
 padding: 20px;
 text-align: center;
+font-family: 'Segoe UI', sans-serif;
 }
 
-nav ul {
+/* Título */
+header h1 {
+font-size: 2.5em;
+margin-bottom: 15px;
+}
+
+/* Navegação */
+header nav ul {
 list-style: none;
 padding: 0;
+margin: 0;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-gap: 20px;
+gap: 15px;
 }
 
-nav a {
-color: white;
+/* Links */
+header nav ul li a {
+color: #ffffff;
 text-decoration: none;
 font-weight: bold;
+padding: 8px 12px;
+border-radius: 5px;
+transition: background-color 0.3s ease;
 }
 
-main {
-padding: 20px;
+/* Efeito hover */
+header nav ul li a:hover {
+background-color: #444;
 }
 
-section {
-margin-bottom: 40px;
-padding: 20px;
+.grade-de-materias {
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+gap: 20px;
+padding: 10px;
+}
+
+.grade-de-materias article {
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+padding: 15px;
+text-align: left;
+font-family: 'Segoe UI', sans-serif;
+transition: transform 0.3s ease;
+}
+
+.grade-de-materias article:hover {
+transform: translateY(-5px);
+}
+
+.grade-de-materias img {
+width: 100%;
+height: auto;
 border-radius: 8px;
 }
 
-#entretenimento {
-background-color: #ffe0e6;
+.grade-de-materias h2 {
+font-size: 1.2em;
+margin: 10px 0 5px;
 }
 
-#tecnologia {
-background-color: #e0f7fa;
+.grade-de-materias p {
+font-size: 0.95em;
+color: #333;
 }
 
-article {
-margin-bottom: 20px;
+.grade-de-materias span {
+font-size: 0.85em;
+color: #777;
 }
 
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 10px;
-}
